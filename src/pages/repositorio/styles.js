@@ -50,6 +50,30 @@ export const BackButton = styled(Link)`
     background: transparent;
 `
 
+export const IssueState = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+
+    button{
+        outline: 0;
+        border: 0;
+        background: #222;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+
+        &:nth-child(${props => props.active + 1}){
+            background: #0071db;
+            color: #fff;
+        }
+    }
+`
+
 export const IssuesList = styled.ul`
     margin-top: 30px;
     padding-top: 30px;
@@ -110,6 +134,26 @@ export const IssuesList = styled.ul`
                 padding: 5px 7px;
                 margin-left: 10px;
             }
+        }
+    }
+`
+
+export const PageActions = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        outline: 0;
+        border: 0;
+        background: #222;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+
+        &:disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
         }
     }
 `
