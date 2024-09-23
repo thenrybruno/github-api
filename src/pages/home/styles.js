@@ -14,6 +14,16 @@ export const Container = styled.div`
         align-items: center;
         gap: 10px;
     }
+
+    p{
+        margin-top: 20px;
+
+        p{
+            font-weight: bold;
+            margin-top: 10px;
+            color: #0d2636;
+        }
+    }
 `;
 
 export const Form = styled.form`

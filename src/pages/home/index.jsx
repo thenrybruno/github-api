@@ -82,6 +82,11 @@ const Home = () => {
                 Meus Repositórios
             </h1>
 
+            <p>
+                Descubra as Issues abertas e fechadas do repósitorio de sua escolha! Basta colocar o nome do dono do repositório e depois o nome do repositório.
+                <p>Ex.: facebook/react</p>
+            </p>
+
             <Form onSubmit={handleSubmit} error={alert}>
                 <input
                     type="text"
